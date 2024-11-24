@@ -2,12 +2,10 @@
 layout: post
 title: Breathe Life Into Your React Projects with React Router 
 subtitle: Make your SPAs navigable!
-gh-repo: daattali/beautiful-jekyll
-gh-badge: [star, fork, follow]
 tags: [javascript, react, web development]
 comments: true
 mathjax: true
-author: Bill Smith
+author: Kyle Hartson
 ---
 
 {: .box-note}

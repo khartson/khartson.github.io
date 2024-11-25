@@ -10,7 +10,7 @@
 ############################
 
 # Name of website
-title: Kyle Hartson
+title: Kyle Hartson's Site 
 
 # Your name to show in the footer
 author: Kyle Hartson 
@@ -21,9 +21,9 @@ author: Kyle Hartson
 
 navbar-links:
   About Me: "aboutme"
-  Resources:
-    - Beautiful Jekyll: "https://beautifuljekyll.com"
-    - Learn markdown: "https://www.markdowntutorial.com/"
+  #Resources:
+  #  - Beautiful Jekyll: "https://beautifuljekyll.com"
+  #  - Learn markdown: "https://www.markdowntutorial.com/"
     #  Author's home: "https://deanattali.com"
 
 ################
@@ -51,6 +51,7 @@ round-avatar: true
 # Uncomment the links you want to show and add your information to each one.
 social-network-links:
   email: "kylehartson@proton.me"
+  email: "khartson2017@gmail.com"
   github: khartson
   medium: khartson2017
 #  reddit: yourname or r/yoursubreddit
@@ -85,9 +86,9 @@ rss-description: This website is a virtual proof that I'm awesome
 
 # Select which social network share links to show in posts
 share-links-active:
-  twitter: false
-  facebook: false
-  linkedin: false
+  twitter: true
+  facebook: true
+  linkedin: true
   vk: false
 
 # How to display the link to your website in the footer
@@ -107,7 +108,7 @@ feed_show_excerpt: true
 feed_show_tags: true
 
 # Add a search button to the navbar
-# post_search: true
+post_search: false
 
 # Add a button in the footer to edit the current page. Only works if your website is hosted on GitHub
 edit_page_button: true
@@ -132,11 +133,11 @@ link-col: "#E95678"
 hover-col: "#F09383"
 navbar-col: "#232530"
 navbar-text-col: "#E95678"
-navbar-border-col: "#6C6F93"
+navbar-border-col: "#DDDDDD"
 footer-col: "#232530"
-footer-text-col: "#FAC29A"
+footer-text-col: "#B877DB"
 footer-link-col: "#E95678"
-footer-hover-col: "#25B2BC"
+footer-hover-col: "##25B2BC"
 
 # Alternatively, the navbar, footer, and page background can be set to an image
 # instead of colour
@@ -193,7 +194,7 @@ footer-hover-col: "#25B2BC"
 #fb_comment_id: ""
 
 # To use CommentBox, sign up for a Project ID on https://commentbox.io
-commentbox: "5689545685204992-proj" # Project ID, e.g. "5694267682979840-proj"
+#commentbox: "" # Project ID, e.g. "5694267682979840-proj"
 
 # To use Utterances comments: (0) uncomment the following section, (1) fill in
 # "repository" (make sure the repository is public), (2) Enable Issues in your repository,

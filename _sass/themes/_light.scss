@@ -1,0 +1,319 @@
+/*
+ * Horizon Bright (light) theme for Chirpy
+ * Source: bright.json — https://horizontheme.netlify.app
+ */
+
+@mixin styles {
+  color-scheme: light;
+
+  /* Framework color */
+  --main-bg: #fdf0ed;
+  --mask-bg: #f9cec3;
+  --main-border-color: #f9cbbe;
+
+  /* Common color */
+  --text-color: #06060c;
+  --text-muted-color: rgb(6 6 12 / 70%);
+  --text-muted-highlight-color: #06060c;
+  --heading-color: #06060c;
+  --label-color: rgb(6 6 12 / 70%);
+  --blockquote-border-color: #f9cec3;
+  --blockquote-text-color: rgb(6 6 12 / 70%);
+  --link-color: #e84a72;
+  --link-underline-color: #e73665;
+  --button-bg: #fadad1;
+  --btn-border-color: #f9cbbe;
+  --btn-backtotop-color: #06060c;
+  --btn-backtotop-border-color: #f9cbbe;
+  --card-header-bg: #f9cbbe;
+  --checkbox-color: #f9cec3;
+  --checkbox-checked-color: var(--link-color);
+  --img-bg: radial-gradient(circle, #fdf0ed 0%, #fadad1 100%);
+  --shimmer-bg: linear-gradient(
+    90deg,
+    rgb(253 240 237 / 0%) 0%,
+    rgb(249 203 190 / 60%) 50%,
+    rgb(253 240 237 / 0%) 100%
+  );
+
+  /* Sidebar */
+  --site-title-color: #e84a72;
+  --site-subtitle-color: rgb(6 6 12 / 70%);
+  --sidebar-bg: #f9cbbe;
+  --sidebar-border-color: #f9cec3;
+  --sidebar-muted-color: rgb(6 6 12 / 70%);
+  --sidebar-active-color: #06060c;
+  --sidebar-hover-bg: rgb(249 206 195 / 60%);
+  --sidebar-btn-bg: #fadad1;
+  --sidebar-btn-color: rgb(6 6 12 / 70%);
+  --avatar-border-color: #fdf0ed;
+
+  /* Topbar */
+  --topbar-bg: rgb(253 240 237 / 70%);
+  --topbar-text-color: #06060c;
+  --search-border-color: #f9cbbe;
+  --search-icon-color: #f9cec3;
+  --input-focus-border-color: #e84a72;
+
+  /* Home page */
+  --post-list-text-color: #06060c;
+  --btn-patinator-text-color: #06060c;
+  --btn-paginator-hover-color: #f9cbbe;
+
+  /* Posts */
+  --toc-highlight: #1d8991;
+  --toc-popup-border-color: #f9cbbe;
+  --btn-share-color: rgb(6 6 12 / 50%);
+  --btn-share-hover-color: #e84a72;
+  --card-bg: #fadad1;
+  --card-hover-bg: #f9cbbe;
+  --card-shadow: rgb(6 6 12 / 5%) 0 2px 6px 0,
+    rgb(249 203 190 / 40%) 0 0 0 1px;
+  --footnote-target-bg: rgb(232 74 114 / 15%);
+  --tb-odd-bg: #fadad1;
+  --tb-even-bg: #fdf0ed;
+  --tb-border-color: #f9cbbe;
+  --dash-color: #f9cec3;
+  --kbd-wrap-color: #f9cec3;
+  --kbd-text-color: var(--text-color);
+  --kbd-bg-color: #fdf0ed;
+  --prompt-text-color: rgb(6 6 12 / 77%);
+  --prompt-tip-bg: rgb(30 185 128 / 12%);
+  --prompt-tip-icon-color: #1eb980;
+  --prompt-info-bg: rgb(29 137 145 / 12%);
+  --prompt-info-icon-color: #1d8991;
+  --prompt-warning-bg: rgb(246 102 30 / 12%);
+  --prompt-warning-icon-color: #f6661e;
+  --prompt-danger-bg: rgb(244 62 92 / 12%);
+  --prompt-danger-icon-color: #f43e5c;
+
+  /* Tags */
+  --tag-border: #f9cbbe;
+  --tag-shadow: #f9cbbe;
+  --tag-hover: rgb(249 203 190 / 80%);
+  --search-tag-bg: #f9cbbe;
+
+  /* Categories */
+  --categories-border: rgb(6 6 12 / 12%);
+  --categories-hover-bg: #f9cbbe;
+  --categories-icon-hover-color: #06060c;
+
+  /* Archive */
+  --timeline-color: rgb(6 6 12 / 8%);
+  --timeline-node-bg: #f9cec3;
+  --timeline-year-dot-color: #fdf0ed;
+
+  /* Code highlight colors */
+  --language-border-color: #f9cbbe;
+  --highlight-bg-color: #fadad1;
+  --highlighter-rouge-color: #dc3318;
+  --highlight-lineno-color: rgb(6 6 12 / 50%);
+  --inline-code-bg: rgb(249 203 190 / 50%);
+  --code-color: #dc3318;
+  --code-header-text-color: rgb(6 6 12 / 50%);
+  --code-header-muted-color: #f9cbbe;
+  --code-header-icon-color: #f9cec3;
+  --clipboard-checked-color: #07da8c;
+
+  [class^='prompt-'] {
+    --link-underline-color: rgb(249 203 190);
+  }
+
+  ::-moz-selection {
+    color: #fdf0ed;
+    background-color: #e84a72;
+  }
+
+  ::selection {
+    color: #fdf0ed;
+    background-color: #e84a72;
+  }
+
+  .dark {
+    display: none;
+  }
+
+  /* --- Horizon Bright syntax (Rouge) --- */
+
+  .highlight table td {
+    padding: 5px;
+  }
+
+  .highlight table pre {
+    margin: 0;
+  }
+
+  .highlight,
+  .highlight .w {
+    color: #06060c;
+    background-color: #fadad1;
+  }
+
+  .highlight .err {
+    color: #fdf0ed;
+    background-color: #f43e5c;
+  }
+
+  .highlight .c,
+  .highlight .ch,
+  .highlight .cd,
+  .highlight .cm,
+  .highlight .cpf,
+  .highlight .c1,
+  .highlight .cs {
+    color: rgb(51 51 51 / 50%);
+    font-style: italic;
+  }
+
+  .highlight .cp {
+    color: rgb(51 51 51 / 50%);
+  }
+
+  .highlight .k,
+  .highlight .kn,
+  .highlight .kp,
+  .highlight .kr,
+  .highlight .kv {
+    color: #8a31b9;
+  }
+
+  .highlight .kd {
+    color: #8a31b9;
+  }
+
+  .highlight .kc,
+  .highlight .no {
+    color: #dc3318;
+  }
+
+  .highlight .kt,
+  .highlight .nc {
+    color: #f77d26;
+  }
+
+  .highlight .nf,
+  .highlight .fm {
+    color: #1d8991;
+  }
+
+  .highlight .nt {
+    color: #da103f;
+  }
+
+  .highlight .na {
+    color: #dc3318;
+  }
+
+  .highlight .nv,
+  .highlight .nx,
+  .highlight .vc,
+  .highlight .vg,
+  .highlight .vi,
+  .highlight .vm {
+    color: #da103f;
+  }
+
+  .highlight .nb,
+  .highlight .nn {
+    color: #f77d26;
+  }
+
+  .highlight .ne,
+  .highlight .nl,
+  .highlight .py {
+    color: #da103f;
+  }
+
+  .highlight .o,
+  .highlight .ow,
+  .highlight .p,
+  .highlight .pi {
+    color: #333333;
+  }
+
+  .highlight .s,
+  .highlight .sb,
+  .highlight .sc,
+  .highlight .dl,
+  .highlight .sd,
+  .highlight .s2,
+  .highlight .sh,
+  .highlight .sx,
+  .highlight .s1,
+  .highlight .ss {
+    color: #f6661e;
+  }
+
+  .highlight .sr {
+    color: #dc3318;
+  }
+
+  .highlight .se {
+    color: #1d8991;
+  }
+
+  .highlight .si {
+    color: #333333;
+  }
+
+  .highlight .sa {
+    color: #8a31b9;
+  }
+
+  .highlight .m,
+  .highlight .mb,
+  .highlight .mf,
+  .highlight .mh,
+  .highlight .mi,
+  .highlight .il,
+  .highlight .mo,
+  .highlight .mx,
+  .highlight .l,
+  .highlight .ld {
+    color: #dc3318;
+  }
+
+  .highlight .bp {
+    color: #f77d26;
+    font-style: italic;
+  }
+
+  .highlight .gh,
+  .highlight .gu {
+    color: #da103f;
+    font-weight: bold;
+  }
+
+  .highlight .gr,
+  .highlight .gt {
+    color: #f43e5c;
+  }
+
+  .highlight .gd {
+    color: #f43e5c;
+    background-color: rgb(244 62 92 / 10%);
+  }
+
+  .highlight .gi {
+    color: #1eb980;
+    background-color: rgb(7 218 140 / 10%);
+  }
+
+  .highlight .ge {
+    font-style: italic;
+  }
+
+  .highlight .gs {
+    font-weight: bold;
+  }
+
+  .highlight .gl,
+  .highlight .ni,
+  .highlight .go {
+    color: #333333;
+  }
+
+  .highlight .nd {
+    color: #8a31b9;
+  }
+}

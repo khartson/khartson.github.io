@@ -1,0 +1,37 @@
+---
+---
+
+/* prettier-ignore */
+@use 'main
+{%- if jekyll.environment == 'production' -%}
+  .bundle
+{%- endif -%}
+';
+
+@use 'themes/dark';
+@use 'themes/light';
+
+/* Override Chirpy default themes with Horizon Bold / Bright */
+html {
+  @media (prefers-color-scheme: light) {
+    &:not([data-mode]),
+    &[data-mode='light'] {
+      @include light.styles;
+    }
+
+    &[data-mode='dark'] {
+      @include dark.styles;
+    }
+  }
+
+  @media (prefers-color-scheme: dark) {
+    &:not([data-mode]),
+    &[data-mode='dark'] {
+      @include dark.styles;
+    }
+
+    &[data-mode='light'] {
+      @include light.styles;
+    }
+  }
+}

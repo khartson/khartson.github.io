@@ -5,7 +5,7 @@ description: A simple demonstration of how CI can automate and standardize API c
 date: 2026-05-06 12:00:00 -0400
 categories: [DevOps, Automation]
 tags: [devops, web development, automation, part 1]
-author: Kyle Hartson
+author: "Kyle Hartson"
 math: true
 ---
 
